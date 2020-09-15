@@ -3,5 +3,5 @@ package br.com.aularevisao
 interface Docente {
     fun darAula(aula: Aula)
 
-    fun fazerChamada(alunos: List<Aluno>)
+    fun fazerChamada(alunos: List<Aluno>, aula: Aula)
 }

@@ -1,5 +1,10 @@
 package br.com.aularevisao
 
-class Curso(var nome: String, var aulaLista: List<Aula>, var listAlunos: List<Aluno>, var professo: Professor) {
+class Curso(var nome: String, var professor: Professor){
+    var aulaLista = arrayListOf<Aula>()
+    var listAlunos =  arrayListOf<Aluno>()
 
+    fun addAulas(vararg x: Aula) = aulaLista.addAll(x)
+
+    fun addAlunos(vararg x: Aluno) = listAlunos.addAll(x)
 }
